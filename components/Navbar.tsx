@@ -28,6 +28,7 @@ export default function Navbar() {
         <div className="flex h-[82px] items-center justify-between">
 
           {/* LOGO */}
+          {/* LOGO */}
           <Link
             href="/"
             aria-label="JOB FINDER Home"
@@ -36,7 +37,7 @@ export default function Navbar() {
             <img
               src="/logo/logo.jpeg"
               alt="JOB FINDER"
-              className="h-auto w-[145px] object-contain"
+              className="h-auto w-[145px] object-contain mix-blend-multiply"
             />
           </Link>
 
