@@ -7,7 +7,6 @@ import Destinations from "@/components/Destinations";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import MobileBottomBar from "@/components/MobileBottomBar";
-
 export default function Home() {
   const whatsappMessage =
     "Hello Abdur Rhaman, I would like to discuss my visa requirement.";
@@ -15,7 +14,6 @@ export default function Home() {
   const whatsappLink = `https://wa.me/917897638334?text=${encodeURIComponent(
     whatsappMessage
   )}`;
-
   return (
     <>
       <Navbar />
@@ -60,13 +58,11 @@ export default function Home() {
             </div>
           </div>
         </section>
-
         <VisaFinder />
         <Services />
         <Process />
         <Destinations />
         <FAQ />
-
         {/* FINAL CTA */}
         <section className="bg-[#d4a72c] py-24">
           <div className="container">

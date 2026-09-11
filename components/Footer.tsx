@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { MapPin, Phone } from "lucide-react";
+import { MapPin, Phone, ArrowUpRight } from "lucide-react";
 
 export default function Footer() {
   const whatsappMessage =
@@ -12,32 +12,33 @@ export default function Footer() {
   return (
     <footer className="bg-[#0b1f3a] text-white">
       <div className="container py-20">
+
         <div className="grid gap-14 lg:grid-cols-[1.3fr_.7fr_.7fr]">
 
           {/* BRAND + CTA */}
           <div>
-            <div className="flex items-center gap-3">
-              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white text-sm font-extrabold text-[#0b1f3a]">
-                JQ
-              </div>
 
-              <div>
-                <div className="font-['Manrope'] text-xl font-extrabold tracking-[-0.04em]">
-                  JOB FINDER
-                </div>
+            {/* LOGO */}
+            <Link
+              href="/"
+              aria-label="JOB FINDER Home"
+              className="flex h-[68px] w-[180px] items-center overflow-hidden"
+            >
+              <img
+                src="/logo/logo.jpeg"
+                alt="JOB FINDER Visa Specialist"
+                className="h-auto w-[180px] object-contain"
+              />
+            </Link>
 
-                <div className="text-[9px] font-bold uppercase tracking-[0.18em] text-white/50">
-                  Visa Specialist
-                </div>
-              </div>
-            </div>
-
+            {/* MAIN HEADING */}
             <h2 className="mt-10 max-w-[620px] font-['Manrope'] text-5xl font-extrabold leading-[.95] tracking-[-.06em] sm:text-7xl">
               LET&apos;S TALK ABOUT
               <br />
               YOUR JOURNEY.
             </h2>
 
+            {/* WHATSAPP CTA */}
             <div className="mt-8">
               <a
                 href={whatsappLink}
@@ -50,8 +51,10 @@ export default function Footer() {
                 }}
               >
                 Chat with Abdur Rhaman
+                <ArrowUpRight size={17} />
               </a>
             </div>
+
           </div>
 
           {/* NAVIGATION */}
@@ -61,32 +64,55 @@ export default function Footer() {
             </div>
 
             <div className="flex flex-col gap-4 text-sm font-semibold text-white/75">
-              <Link href="/">Home</Link>
 
-              <Link href="/visa-services">
+              <Link
+                href="/"
+                className="transition-colors hover:text-white"
+              >
+                Home
+              </Link>
+
+              <Link
+                href="/visa-services"
+                className="transition-colors hover:text-white"
+              >
                 Visa Services
               </Link>
 
-              <Link href="/destinations">
+              <Link
+                href="/destinations"
+                className="transition-colors hover:text-white"
+              >
                 Destinations
               </Link>
 
-              <Link href="/about">
+              <Link
+                href="/about"
+                className="transition-colors hover:text-white"
+              >
                 About
               </Link>
 
-              <Link href="/contact">
+              <Link
+                href="/contact"
+                className="transition-colors hover:text-white"
+              >
                 Contact
               </Link>
 
-              <Link href="/faq">
+              <Link
+                href="/faq"
+                className="transition-colors hover:text-white"
+              >
                 FAQ
               </Link>
+
             </div>
           </div>
 
           {/* CONTACT */}
           <div>
+
             <div className="mb-5 text-xs font-bold uppercase tracking-[0.16em] text-white/40">
               Contact
             </div>
@@ -97,7 +123,7 @@ export default function Footer() {
               <div className="flex gap-3">
                 <MapPin
                   size={17}
-                  className="shrink-0 text-[#d4a72c]"
+                  className="mt-0.5 shrink-0 text-[#d4a72c]"
                 />
 
                 <span>
@@ -112,7 +138,7 @@ export default function Footer() {
               >
                 <Phone
                   size={17}
-                  className="shrink-0 text-[#d4a72c]"
+                  className="mt-0.5 shrink-0 text-[#d4a72c]"
                 />
 
                 <span>
@@ -133,30 +159,46 @@ export default function Footer() {
                   Job4U
                 </span>
               </a>
+
             </div>
           </div>
+
         </div>
 
         {/* FOOTER BOTTOM */}
         <div className="mt-20 flex flex-col justify-between gap-5 border-t border-white/10 pt-7 text-xs text-white/40 md:flex-row">
+
           <div>
             © {new Date().getFullYear()} JOB FINDER. All rights reserved.
           </div>
 
           <div className="flex gap-6">
-            <Link href="/privacy-policy">
+
+            <Link
+              href="/privacy-policy"
+              className="transition-colors hover:text-white"
+            >
               Privacy
             </Link>
 
-            <Link href="/terms">
+            <Link
+              href="/terms"
+              className="transition-colors hover:text-white"
+            >
               Terms
             </Link>
 
-            <Link href="/disclaimer">
+            <Link
+              href="/disclaimer"
+              className="transition-colors hover:text-white"
+            >
               Disclaimer
             </Link>
+
           </div>
+
         </div>
+
       </div>
     </footer>
   );

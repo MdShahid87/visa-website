@@ -9,7 +9,6 @@ export default function Services() {
         <div className="grid gap-12 lg:grid-cols-[.7fr_1.3fr]">
           <div>
             <div className="eyebrow mb-6">What we do</div>
-
             <h2 className="section-title max-w-[480px] text-[#0b1f3a]">
               VISA SUPPORT FOR YOUR NEXT MOVE.
             </h2>
