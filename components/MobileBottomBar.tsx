@@ -8,7 +8,6 @@ export default function MobileBottomBar() {
         <Phone size={17} />
         Call
       </a>
-
       <a
         href={createWhatsAppLink(whatsappMessages.general)}
         target="_blank"

@@ -13,7 +13,6 @@ export default function BahrainPage() {
   return (
     <>
       <Navbar />
-
       <main>
         {/* HERO SECTION */}
         <section className="bg-[#0b1f3a] py-28 text-white">
@@ -22,9 +21,9 @@ export default function BahrainPage() {
               Destination
             </div>
 
-            <h1 className="display-text mt-7 text-[clamp(58px,8vw,115px)]">
-              BAHRAIN.
-            </h1>
+              <h1 className="display-text mt-7 text-[clamp(58px,8vw,115px)] text-white">
+                BAHRAIN.
+                 </h1>
 
             <p className="mt-8 max-w-[620px] text-lg leading-8 text-white/60">
               Visa and travel assistance for customers planning to travel

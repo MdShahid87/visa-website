@@ -1,7 +1,5 @@
 "use client";
-
 import { ArrowUpRight } from "lucide-react";
-
 export default function WhatsAppButton() {
   const whatsappMessage =
     "Hello Abdur Rhaman, I would like to discuss my visa requirement.";
@@ -9,7 +7,6 @@ export default function WhatsAppButton() {
   const whatsappLink = `https://wa.me/917897638334?text=${encodeURIComponent(
     whatsappMessage
   )}`;
-
   return (
     <a
       href={whatsappLink}

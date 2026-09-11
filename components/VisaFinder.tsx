@@ -1,19 +1,15 @@
 "use client";
-
 import { useState } from "react";
 import { ArrowUpRight, Check } from "lucide-react";
 import { createWhatsAppLink } from "@/lib/whatsapp";
-
 export default function VisaFinder() {
   const [destination, setDestination] = useState("");
   const [visaType, setVisaType] = useState("");
   const [submitted, setSubmitted] = useState(false);
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setSubmitted(true);
   };
-
   const message = `Hello Abdur Rhaman, I need visa assistance. Destination: ${
     destination || "Not selected"
   }. Visa type: ${visaType || "Not selected"}.`;

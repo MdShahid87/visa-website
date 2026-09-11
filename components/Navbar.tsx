@@ -75,7 +75,6 @@ export default function Navbar() {
             {open ? <X size={21} /> : <Menu size={21} />}
           </button>
         </div>
-
         {open && (
           <div className="border-t border-black/5 py-5 lg:hidden">
             <nav className="flex flex-col">
@@ -89,7 +88,6 @@ export default function Navbar() {
                   {item.label}
                 </Link>
               ))}
-
               <a
                 href={createWhatsAppLink(whatsappMessages.general)}
                 target="_blank"

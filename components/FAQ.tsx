@@ -1,12 +1,10 @@
 "use client";
-
 import { useState } from "react";
 import { Plus, Minus } from "lucide-react";
 import { faqs } from "@/data/faqs";
 
 export default function FAQ() {
   const [active, setActive] = useState<number | null>(null);
-
   return (
     <section className="section bg-[#f6f7f5]">
       <div className="container">

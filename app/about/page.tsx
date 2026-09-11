@@ -7,7 +7,6 @@ export default function AboutPage() {
   return (
     <>
       <Navbar />
-
       <main>
         <section className="bg-[#0b1f3a] py-28 text-white">
           <div className="container">
